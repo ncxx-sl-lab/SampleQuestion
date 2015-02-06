@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">sample_question</string>
+
+    <string name="text_question01">今回の「一人一アプリ開発」の資料はどうでしたか？</string>
+    <string name="btn_first_day">１日目</string>
+    <string name="btn_second_day">２日目</string>
+    <string name="btn_finish">アンケート完了</string>
+    <string name="text_thank">回答ありがとうございました。</string>
+
+    <string name="text_question02">資料内容はいかがでしたか？</string>
+
+    <string name="text_title01">内容について</string>
+    <string name="text_title02">理解について</string>
+    <string name="text_title03">講師について</string>
+    <string name="text_title04">時間について</string>
+    <string name="text_title05">１日目の総括</string>
+    <string name="text_title06">２日目の総括</string>
+    <string name="text_title07">Android開発について</string>
+
+    <string name="text_good">良い</string>
+    <string name="text_normal">普通</string>
+    <string name="text_bad">悪い</string>
+    <string name="text_understand">わかった</string>
+    <string name="text_not_understand">わからなかった</string>
+    <string name="text_enough">余った</string>
+    <string name="text_exactly">ぴったり</string>
+    <string name="text_not_enough">足らなかった</string>
+    <string name="text_satisfied">満足した</string>
+    <string name="text_not_satisfied">満足してない</string>
+    <string name="text_dev">もっと開発したい</string>
+    <string name="text_not_dev">興味なし</string>
+
+    <string name="action_settings">Settings</string>
+
+</resources>

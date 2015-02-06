@@ -1,0 +1,241 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <!--質問-->
+    <TextView
+        android:text="@string/text_question02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_question02"
+        />
+
+    <!--回答一段目-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_title01"
+        android:id="@+id/id_first_title"
+        android:layout_below="@+id/id_question02"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_good"
+        android:id="@+id/id_first_left"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/id_first_title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_normal"
+        android:id="@+id/id_first_center"
+        android:layout_alignTop="@+id/id_first_left"
+        android:layout_centerHorizontal="true"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_bad"
+        android:id="@+id/id_first_right"
+        android:layout_alignTop="@+id/id_first_left"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        />
+
+    <!--回答二段目-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_title02"
+        android:id="@+id/id_second_title"
+        android:layout_below="@+id/id_first_left"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_understand"
+        android:id="@+id/id_second_left"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/id_second_title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_not_understand"
+        android:id="@+id/id_second_right"
+        android:layout_alignTop="@+id/id_second_left"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        />
+
+    <!--回答三段目-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_title03"
+        android:id="@+id/id_third_title"
+        android:layout_below="@+id/id_second_left"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_good"
+        android:id="@+id/id_third_left"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/id_third_title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_normal"
+        android:id="@+id/id_third_center"
+        android:layout_alignTop="@id/id_third_left"
+        android:layout_centerHorizontal="true"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_bad"
+        android:id="@+id/id_third_right"
+        android:layout_alignTop="@+id/id_third_left"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        />
+
+    <!--回答四段目-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_title04"
+        android:id="@+id/id_forth_title"
+        android:layout_below="@+id/id_third_left"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_enough"
+        android:id="@+id/id_forth_left"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/id_forth_title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_exactly"
+        android:id="@+id/id_forth_center"
+        android:layout_alignTop="@id/id_forth_left"
+        android:layout_centerHorizontal="true"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_not_enough"
+        android:id="@+id/id_forth_right"
+        android:layout_alignTop="@+id/id_forth_left"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        />
+
+    <!--回答五段目-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_title06"
+        android:id="@+id/id_fifth_title"
+        android:layout_below="@+id/id_forth_left"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_satisfied"
+        android:id="@+id/id_fifth_left"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/id_fifth_title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_not_satisfied"
+        android:id="@+id/id_fifth_right"
+        android:layout_alignTop="@+id/id_fifth_left"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        />
+
+    <!--回答六段目-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_title07"
+        android:id="@+id/id_sixth_title"
+        android:layout_below="@+id/id_fifth_left"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_dev"
+        android:id="@+id/id_sixth_left"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/id_sixth_title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_not_dev"
+        android:id="@+id/id_sixth_right"
+        android:layout_alignTop="@+id/id_sixth_left"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        />
+
+</RelativeLayout>
