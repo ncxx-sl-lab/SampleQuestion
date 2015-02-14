@@ -18,39 +18,36 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
 
         // ボタンの生成
-        Button btn_first_day = (Button)this.findViewById(R.id.id_btn_first_day);
-        Button btn_second_day = (Button)this.findViewById(R.id.id_btn_second_day);
-        Button btn_finish = (Button)this.findViewById(R.id.id_btn_finish);
+        Button btnFirstDay = (Button)this.findViewById(R.id.id_btn_first_day);
+        Button btnSecondDay = (Button)this.findViewById(R.id.id_btn_second_day);
+        Button btnFinish = (Button)this.findViewById(R.id.id_btn_finish);
 
         // １日目ボタンの処理
-        btn_first_day.setOnClickListener(new View.OnClickListener() {
+        btnFirstDay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Intentで１日目のアンケート画面へ
-                Intent mainToFirst = new Intent();
-                mainToFirst.setClassName("com.example.andro.sample_question","com.example.andro.sample_question.SecondActivity");
+                Intent mainToFirst = new Intent(MainActivity.this, SecondActivity.class);
                 startActivity(mainToFirst);
             }
         });
 
         // ２日目ボタンの処理
-        btn_second_day.setOnClickListener(new View.OnClickListener() {
+        btnSecondDay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Intentで１日目のアンケート画面へ
-                Intent mainToSecond = new Intent();
-                mainToSecond.setClassName("com.example.andro.sample_question","com.example.andro.sample_question.ThirdActivity");
+                Intent mainToSecond = new Intent(MainActivity.this, ThirdActivity.class);
                 startActivity(mainToSecond);
             }
         });
 
         // アンケート完了ボタンの処理
-        btn_finish.setOnClickListener(new View.OnClickListener() {
+        btnFinish.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Intentでアンケート完了画面へ
-                Intent mainToQuestionDone = new Intent();
-                mainToQuestionDone.setClassName("com.example.andro.sample_question","com.example.andro.sample_question.QuestionDoneActivity");
+                Intent mainToQuestionDone = new Intent(MainActivity.this, QuestionDoneActivity.class);
                 startActivity(mainToQuestionDone);
 
                 // トースト作成と表示のメソッドを呼び出す
@@ -61,7 +58,7 @@ public class MainActivity extends ActionBarActivity {
 
     // トーストの作成と表示
     private void showToast () {
-        Toast.makeText(this, "アンケートの集計が完了しました！", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, R.string.text_question_done, Toast.LENGTH_SHORT).show();
     }
 
     @Override
