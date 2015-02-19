@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">SampleQuestion</string>
 
-    <string name="text_question01">今回の「一人一アプリ開発」の資料はどうでしたか？</string>
+    <string name="text_question01">今回の「1人1アプリ開発」の資料はどうでしたか？</string>
     <string name="btn_first_day">１日目</string>
     <string name="btn_second_day">２日目</string>
     <string name="btn_finish">アンケート完了</string>
