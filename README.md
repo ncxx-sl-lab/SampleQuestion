@@ -3,7 +3,9 @@
 [![Join the chat at https://gitter.im/ncxx-sl-lab/sample_question](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ncxx-sl-lab/sample_question?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 1人1アプリ開発のサンプルアプリです。  
-**画面右の Download ZIP でソースの圧縮ファイルをダウンロードできます。**
+**画面右の Download ZIP でソースの圧縮ファイルをダウンロードできます。**  
+**ソースの改行コードはLFです。**  
+**windowsでファイルを閲覧する場合は注意していください。**
 
 上記の JOIN CHAT をクリックするとチャットルームへ移動して、メンバーと会話できます。  
 ※ チャットに参加するにはGitHubのアカウントが必要です。
