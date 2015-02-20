@@ -37,7 +37,8 @@
             android:text="@string/text_good"
             android:id="@+id/id_radio_first_left"
             android:layout_marginTop="10dp"
-            android:layout_marginRight="50dp" />
+            android:layout_marginRight="50dp"
+            android:onClick="onRadioButtonFirstClicked" />
 
         <RadioButton
             android:layout_width="wrap_content"
@@ -45,14 +46,16 @@
             android:text="@string/text_normal"
             android:id="@+id/id_radio_first_center"
             android:layout_marginTop="10dp"
-            android:layout_marginRight="50dp" />
+            android:layout_marginRight="50dp"
+            android:onClick="onRadioButtonFirstClicked" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/text_bad"
             android:id="@+id/id_radio_first_right"
-            android:layout_marginTop="10dp" />
+            android:layout_marginTop="10dp"
+            android:onClick="onRadioButtonFirstClicked" />
 
     </RadioGroup>
 
