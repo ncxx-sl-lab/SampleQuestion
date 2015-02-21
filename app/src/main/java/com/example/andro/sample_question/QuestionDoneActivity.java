@@ -2,7 +2,6 @@ package com.example.andro.sample_question;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.v7.app.ActionBarActivity;
 import android.view.KeyEvent;
 import android.widget.TextView;
@@ -37,7 +36,7 @@ public class QuestionDoneActivity extends ActionBarActivity {
 
     // 戻るボタンを検知
     @Override
-    public boolean dispatchKeyEvent(@NonNull KeyEvent event) {
+    public boolean dispatchKeyEvent(KeyEvent event) {
         if (event.getKeyCode() == KeyEvent.KEYCODE_BACK){
             // 保存データの削除
             SharedPreferences spFirst = getSharedPreferences("FIRST_DAY", MODE_PRIVATE);
