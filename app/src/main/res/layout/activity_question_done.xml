@@ -13,4 +13,22 @@
         android:id="@+id/id_thank"
         />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/id_first_day_score_text"
+        android:layout_below="@+id/id_thank"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/id_second_day_score_text"
+        android:layout_below="@+id/id_first_day_score_text"
+        android:layout_marginTop="30dp"
+        />
+
 </RelativeLayout>

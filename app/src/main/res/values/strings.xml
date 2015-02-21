@@ -31,6 +31,8 @@
     <string name="text_dev">もっと開発したい</string>
     <string name="text_not_dev">興味なし</string>
 
+    <string name="text_first_day_done">１日目のアンケートに回答する</string>
+    <string name="text_second_day_done">２日目のアンケートに回答する</string>
     <string name="text_question_done">アンケートの集計が完了しました！</string>
 
     <string name="action_settings">Settings</string>

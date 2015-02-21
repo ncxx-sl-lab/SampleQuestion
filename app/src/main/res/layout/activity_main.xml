@@ -20,7 +20,17 @@
         android:layout_marginTop="64dp"
         android:layout_below="@+id/id_question01"
         android:layout_centerHorizontal="true"
+        android:onClick="onBtnFirstDay"
         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/id_first_day_question_text"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/id_btn_first_day"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -31,6 +41,17 @@
         android:layout_below="@+id/id_btn_first_day"
         android:layout_alignLeft="@+id/id_btn_first_day"
         android:layout_alignStart="@+id/id_btn_first_day"
+        android:onClick="onBtnSecondDay"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/id_second_day_question_text"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/id_btn_second_day"
+        android:layout_centerHorizontal="true"
         />
 
     <Button
@@ -41,6 +62,7 @@
         android:layout_below="@+id/id_btn_second_day"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
+        android:onClick="onBtnQuestionDone"
         />
 
 </RelativeLayout>

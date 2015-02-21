@@ -4,9 +4,8 @@ import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
-
 
 public class MainActivity extends ActionBarActivity {
 
@@ -16,47 +15,42 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
         android.util.Log.i("", "メイン画面のonCreate");
 
-        // ボタンの生成
-        Button btnFirstDay = (Button)this.findViewById(R.id.id_btn_first_day);
-        Button btnSecondDay = (Button)this.findViewById(R.id.id_btn_second_day);
-        Button btnFinish = (Button)this.findViewById(R.id.id_btn_finish);
+        // 回答数の表示
+        TextView firstDayQuestionText = (TextView) findViewById(R.id.id_first_day_question_text);
+        TextView secondDayQuestionText = (TextView) findViewById(R.id.id_second_day_question_text);
 
-        // １日目ボタンの処理
-        btnFirstDay.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Intentで１日目のアンケート画面へ
-                Intent mainToFirst = new Intent(MainActivity.this, SecondActivity.class);
-                startActivity(mainToFirst);
-            }
-        });
+        // intentから値を受け取る
+        Intent intent = getIntent();
+        firstDayQuestionText.setText(intent.getIntExtra("FIRST_DAY_ANSWER", 0) + " / " + 5);
+        secondDayQuestionText.setText(intent.getIntExtra("SECOND_DAY_ANSWER", 0) + " / " + 6);
+    }
 
-        // ２日目ボタンの処理
-        btnSecondDay.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Intentで１日目のアンケート画面へ
-                Intent mainToSecond = new Intent(MainActivity.this, ThirdActivity.class);
-                startActivity(mainToSecond);
-            }
-        });
+    public void onBtnFirstDay(View view) {
+        // Intentで１日目のアンケート画面へ
+        Intent mainToFirst = new Intent(MainActivity.this, SecondActivity.class);
+        startActivity(mainToFirst);
+    }
 
-        // アンケート完了ボタンの処理
-        btnFinish.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Intentでアンケート完了画面へ
-                Intent mainToQuestionDone = new Intent(MainActivity.this, QuestionDoneActivity.class);
-                startActivity(mainToQuestionDone);
+    public void onBtnSecondDay(View view) {
+        // Intentで２日目のアンケート画面へ
+        Intent mainToSecond = new Intent(MainActivity.this, ThirdActivity.class);
+        startActivity(mainToSecond);
+    }
 
-                // トースト作成と表示のメソッドを呼び出す
-                showToast();
-            }
-        });
+    public void onBtnQuestionDone(View view) {
+        // Intentでアンケート完了画面へ
+        Intent mainToQuestionDone = new Intent(MainActivity.this, QuestionDoneActivity.class);
+        startActivity(mainToQuestionDone);
+
+        // トースト作成と表示のメソッドを呼び出す
+        showToast();
     }
 
     // トーストの作成と表示
     private void showToast () {
         Toast.makeText(this, R.string.text_question_done, Toast.LENGTH_SHORT).show();
+    }
+
+    public void onRadioButtonFirstClicked(View view) {
     }
 }

@@ -68,7 +68,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="30dp"
-        android:layout_below="@+id/id_RadioGroup_first" />
+        android:layout_below="@+id/id_RadioGroup_first"
+        />
 
     <RadioGroup android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -82,14 +83,16 @@
             android:text="@string/text_understand"
             android:id="@+id/id_radio_second_left"
             android:layout_marginTop="10dp"
-            android:layout_marginRight="50dp" />
+            android:layout_marginRight="50dp"
+            android:onClick="onRadioButtonSecondClicked" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/text_not_understand"
             android:id="@+id/id_radio_second_center"
-            android:layout_marginTop="10dp" />
+            android:layout_marginTop="10dp"
+            android:onClick="onRadioButtonSecondClicked" />
 
     </RadioGroup>
 
@@ -116,7 +119,8 @@
             android:text="@string/text_good"
             android:id="@+id/id_radio_third_left"
             android:layout_marginTop="10dp"
-            android:layout_marginRight="50dp" />
+            android:layout_marginRight="50dp"
+            android:onClick="onRadioButtonThirdClicked" />
 
         <RadioButton
             android:layout_width="wrap_content"
@@ -124,14 +128,16 @@
             android:text="@string/text_normal"
             android:id="@+id/id_radio_third_center"
             android:layout_marginTop="10dp"
-            android:layout_marginRight="50dp" />
+            android:layout_marginRight="50dp"
+            android:onClick="onRadioButtonThirdClicked" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/text_bad"
             android:id="@+id/id_radio_third_right"
-            android:layout_marginTop="10dp" />
+            android:layout_marginTop="10dp"
+            android:onClick="onRadioButtonThirdClicked" />
 
     </RadioGroup>
 
@@ -158,7 +164,8 @@
             android:text="@string/text_enough"
             android:id="@+id/id_radio_forth_left"
             android:layout_marginTop="10dp"
-            android:layout_marginRight="30dp" />
+            android:layout_marginRight="30dp"
+            android:onClick="onRadioButtonForthClicked" />
 
         <RadioButton
             android:layout_width="wrap_content"
@@ -166,14 +173,16 @@
             android:text="@string/text_exactly"
             android:id="@+id/id_radio_forth_center"
             android:layout_marginTop="10dp"
-            android:layout_marginRight="30dp" />
+            android:layout_marginRight="30dp"
+            android:onClick="onRadioButtonForthClicked" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/text_not_enough"
             android:id="@+id/id_radio_forth_right"
-            android:layout_marginTop="10dp" />
+            android:layout_marginTop="10dp"
+            android:onClick="onRadioButtonForthClicked" />
 
     </RadioGroup>
 
@@ -200,14 +209,16 @@
             android:text="@string/text_satisfied"
             android:id="@+id/id_radio_fifth_left"
             android:layout_marginTop="10dp"
-            android:layout_marginRight="50dp" />
+            android:layout_marginRight="50dp"
+            android:onClick="onRadioButtonFifthClicked" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/text_not_satisfied"
             android:id="@+id/id_radio_fifth_center"
-            android:layout_marginTop="10dp" />
+            android:layout_marginTop="10dp"
+            android:onClick="onRadioButtonFifthClicked" />
 
     </RadioGroup>
 
@@ -233,18 +244,29 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/text_dev"
-            android:id="@+id/id_radio_six_left"
+            android:id="@+id/id_radio_sixth_left"
             android:layout_marginTop="10dp"
-            android:layout_marginRight="50dp" />
+            android:layout_marginRight="50dp"
+            android:onClick="onRadioButtonSixthClicked" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/text_not_dev"
-            android:id="@+id/id_radio_six_center"
-            android:layout_marginTop="10dp" />
+            android:id="@+id/id_radio_sixth_right"
+            android:layout_marginTop="10dp"
+            android:onClick="onRadioButtonSixthClicked" />
 
     </RadioGroup>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_second_day_done"
+        android:id="@+id/id_btn_firstDay_done"
+        android:layout_below="@+id/id_RadioGroup_sixth"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="onBtnSecondDayDone" />
 
 </RelativeLayout>
