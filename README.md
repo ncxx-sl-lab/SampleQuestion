@@ -9,7 +9,7 @@
   * **ヒント：** RadioButton, RadioGroup  
 
 2. メイン画面の「n日目」ボタンの下にテキストビューを追加して、質問に何問回答したか表示してください。  
-  * **ヒント:** intent.putExtra(), intent.getIntExtra()  
+  * **ヒント：** intent.putExtra(), intent.getIntExtra()  
 
 3. アンケートの回答を点数化してください。例えば「良い」は10点,「普通」は5点,「悪い」は0点のように。  
   * **ヒント：** android:onClick, isCecked(), getId()  
