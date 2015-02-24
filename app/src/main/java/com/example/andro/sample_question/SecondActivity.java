@@ -196,7 +196,6 @@ public class SecondActivity extends ActionBarActivity {
         Intent secondToMain = new Intent(this, MainActivity.class);
         secondToMain.putExtra("FIRST_DAY_ANSWER", firstDayAnsweredCount);
         startActivity(secondToMain);
-        android.util.Log.i("", "１日目の終了ボタン押した時：" + String.valueOf(firstDayTotalScore));
     }
 
     // データの保存

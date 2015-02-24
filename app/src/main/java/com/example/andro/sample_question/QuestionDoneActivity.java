@@ -22,8 +22,12 @@ public class QuestionDoneActivity extends ActionBarActivity {
         // 得点の表示
         TextView firstDayScoreText = (TextView) findViewById(R.id.id_first_day_score_text);
         TextView secondDayScoreText = (TextView) findViewById(R.id.id_second_day_score_text);
-        firstDayScoreText.setText("１日目： " + firstDayScore + " / 100点");
-        secondDayScoreText.setText("２日目： " + secondDayScore + " / 100点");
+
+        // 可変的な文字列をstrings.xmlから利用する方法と、Javaで変数と文字列を組み合わせて書く方法、敢えて二つ書きました。
+        // 前者の方が保守性が高いため、推奨されている書き方です。
+        int maxScore = getResources().getInteger(R.integer.default_max_score);
+        firstDayScoreText.setText(getString(R.string.str_day_score_text ,1 ,firstDayScore, maxScore));
+        secondDayScoreText.setText("2日目： " + secondDayScore + " / 100点");
     }
 
     // 保存データの読み込み

@@ -35,5 +35,11 @@
     <string name="text_second_day_done">２日目のアンケートに回答する</string>
     <string name="text_question_done">アンケートの集計が完了しました！</string>
 
+    <!--可変的な静的リソース（文字列）の書き方-->
+    <string name="str_day_score_text">%1$d日目： %2$d / %3$d点</string>
+
+    <!--文字列だけでなく数値も定義できます-->
+    <integer name="default_max_score">100</integer>
+
     <string name="action_settings">Settings</string>
 </resources>
