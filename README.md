@@ -3,6 +3,10 @@
 こちらのブランチは、サンプルアプリの改善・改良版となっています。    
 資料の改善・改良点にトライした後、自分のソースと比較してみてください。
 
+## Gifアニメーション
+<img src="http://keepingblog.net/github_images/sample_question/sampleQuestion_improve.gif" width="350" height="600">
+
+
 ## 改善・改良点
 
 1. 質問に対して回答が一つだけしか選択できないようにチェックボックスをラジオボタンに変更してください。
