@@ -3,6 +3,10 @@
 [![Join the chat at https://gitter.im/ncxx-sl-lab/sample_question](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ncxx-sl-lab/sample_question?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 1人1アプリ開発のサンプルアプリです。  
+
+## GIFアニメーション
+<img src="http://keepingblog.net/github_images/sample_question/sample_question.gif" width="350" height="600">
+
 * **画面右の Download ZIP でソースの圧縮ファイルをダウンロードできます。**  
 ソースの**改行コードはLF**です。  
 **windowsのメモ帳では閲覧できませんので、サクラエディタなどのLF対応のエディタで閲覧してください。**
