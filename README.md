@@ -4,7 +4,7 @@
 資料の改善・改良点にトライした後、自分のソースと比較してみてください。
 
 ## Gifアニメーション
-<img src="http://keepingblog.net/github_images/sample_question/sampleQuestion_improve.gif" width="350" height="600">
+<img src="http://keepingblog.net/github_images/sample_question/sample_question_improve.gif" width="350" height="600">
 
 
 ## 改善・改良点
