@@ -230,5 +230,7 @@ public class ThirdActivity extends ActionBarActivity {
         SharedPreferences.Editor editor = sp.edit();
         editor.putInt("SECOND_DAY_SCORE", secondDayTotalScore);
         editor.apply();
+
+//        gugugigg
     }
 }
