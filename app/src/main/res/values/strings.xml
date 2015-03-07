@@ -42,4 +42,5 @@
     <integer name="default_max_score">100</integer>
 
     <string name="action_settings">Settings</string>
+<!--テストテスト-->
 </resources>
