@@ -21,8 +21,8 @@ http://sourceforge.net/projects/sakura-editor/
 <img src="http://keepingblog.net/github_images/sample_question/メイン画面.png" width="250" height="400">
 
 ## 2. アンケート画面の１日目 と ２日目  
-<img src="http://keepingblog.net/github_images/sample_question/アンケート画面の１日目.png" width="250" height="400">
-<img src="http://keepingblog.net/github_images/sample_question/アンケート画面の２日目.png" width="250" height="400">
+<img src="http://keepingblog.net/github_images/sample_question/アンケート画面の一日目.png" width="250" height="400">
+<img src="http://keepingblog.net/github_images/sample_question/アンケート画面の二日目.png" width="250" height="400">
 
 ## 3. アンケート完了画面  
 <img src="http://keepingblog.net/github_images/sample_question/アンケート完了画面.png" width="250" height="400">
