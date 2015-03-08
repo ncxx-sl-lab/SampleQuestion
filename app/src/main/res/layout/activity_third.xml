@@ -1,287 +1,269 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".ThirdActivity">
 
-    <ScrollView
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:id="@+id/scrollView">
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="96dp">
 
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="fill_parent"
+        <!--質問-->
+        <TextView
+            android:text="@string/text_question02"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="96dp">
+            android:id="@+id/id_question02"
+            />
 
-            <!--質問-->
-            <TextView
-                android:text="@string/text_question02"
+        <!--回答一段目-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_title01"
+            android:id="@+id/id_first_title"
+            android:layout_marginTop="40dp"
+            />
+
+        <RadioGroup android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/id_RadioGroup_first"
+            android:weightSum="3">
+
+            <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/id_question02"
-                />
+                android:text="@string/text_good"
+                android:id="@+id/id_radio_first_left"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:onClick="onRadioButtonFirstClicked" />
 
-            <!--回答一段目-->
-            <TextView
+            <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/text_title01"
-                android:id="@+id/id_first_title"
-                android:layout_below="@+id/id_question02"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginTop="40dp"
-                />
+                android:text="@string/text_normal"
+                android:id="@+id/id_radio_first_center"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:onClick="onRadioButtonFirstClicked" />
 
-            <RadioGroup android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_below="@+id/id_first_title"
-                android:id="@+id/id_RadioGroup_first">
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/text_good"
-                    android:id="@+id/id_radio_first_left"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginRight="50dp"
-                    android:onClick="onRadioButtonFirstClicked" />
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/text_normal"
-                    android:id="@+id/id_radio_first_center"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginRight="50dp"
-                    android:onClick="onRadioButtonFirstClicked" />
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/text_bad"
-                    android:id="@+id/id_radio_first_right"
-                    android:layout_marginTop="10dp"
-                    android:onClick="onRadioButtonFirstClicked" />
-
-            </RadioGroup>
-
-            <!--回答二段目-->
-            <TextView
+            <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/text_title02"
-                android:id="@+id/id_second_title"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginTop="30dp"
-                android:layout_below="@+id/id_RadioGroup_first"
-                />
+                android:text="@string/text_bad"
+                android:id="@+id/id_radio_first_right"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:onClick="onRadioButtonFirstClicked" />
 
-            <RadioGroup android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_below="@+id/id_second_title"
-                android:id="@+id/id_RadioGroup_second">
+        </RadioGroup>
 
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/text_understand"
-                    android:id="@+id/id_radio_second_left"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginRight="50dp"
-                    android:onClick="onRadioButtonSecondClicked" />
+        <!--回答二段目-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_title02"
+            android:id="@+id/id_second_title"
+            android:layout_marginTop="30dp"
+            />
 
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/text_not_understand"
-                    android:id="@+id/id_radio_second_center"
-                    android:layout_marginTop="10dp"
-                    android:onClick="onRadioButtonSecondClicked" />
+        <RadioGroup android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/id_RadioGroup_second"
+            android:weightSum="2">
 
-            </RadioGroup>
-
-            <!--回答三段目-->
-            <TextView
+            <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/text_title03"
-                android:id="@+id/id_third_title"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginTop="30dp"
-                android:layout_below="@+id/id_RadioGroup_second" />
+                android:text="@string/text_understand"
+                android:id="@+id/id_radio_second_left"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:onClick="onRadioButtonSecondClicked" />
 
-            <RadioGroup android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_below="@+id/id_third_title"
-                android:id="@+id/id_RadioGroup_third">
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/text_good"
-                    android:id="@+id/id_radio_third_left"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginRight="50dp"
-                    android:onClick="onRadioButtonThirdClicked" />
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/text_normal"
-                    android:id="@+id/id_radio_third_center"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginRight="50dp"
-                    android:onClick="onRadioButtonThirdClicked" />
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/text_bad"
-                    android:id="@+id/id_radio_third_right"
-                    android:layout_marginTop="10dp"
-                    android:onClick="onRadioButtonThirdClicked" />
-
-            </RadioGroup>
-
-            <!--回答四段目-->
-            <TextView
+            <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/text_title04"
-                android:id="@+id/id_forth_title"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginTop="30dp"
-                android:layout_below="@+id/id_RadioGroup_third" />
+                android:text="@string/text_not_understand"
+                android:id="@+id/id_radio_second_center"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:onClick="onRadioButtonSecondClicked" />
 
-            <RadioGroup android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_below="@+id/id_forth_title"
-                android:id="@+id/id_RadioGroup_forth">
+        </RadioGroup>
 
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/text_enough"
-                    android:id="@+id/id_radio_forth_left"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginRight="30dp"
-                    android:onClick="onRadioButtonForthClicked" />
+        <!--回答三段目-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_title03"
+            android:id="@+id/id_third_title"
+            android:layout_marginTop="30dp"
+            />
 
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/text_exactly"
-                    android:id="@+id/id_radio_forth_center"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginRight="30dp"
-                    android:onClick="onRadioButtonForthClicked" />
+        <RadioGroup android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/id_RadioGroup_third"
+            android:weightSum="3">
 
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/text_not_enough"
-                    android:id="@+id/id_radio_forth_right"
-                    android:layout_marginTop="10dp"
-                    android:onClick="onRadioButtonForthClicked" />
-
-            </RadioGroup>
-
-            <!--回答五段目-->
-            <TextView
+            <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/text_title06"
-                android:id="@+id/id_fifth_title"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginTop="30dp"
-                android:layout_below="@+id/id_RadioGroup_forth" />
+                android:text="@string/text_good"
+                android:id="@+id/id_radio_third_left"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:onClick="onRadioButtonThirdClicked" />
 
-            <RadioGroup android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_below="@+id/id_fifth_title"
-                android:id="@+id/id_RadioGroup_fifth">
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/text_satisfied"
-                    android:id="@+id/id_radio_fifth_left"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginRight="50dp"
-                    android:onClick="onRadioButtonFifthClicked" />
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/text_not_satisfied"
-                    android:id="@+id/id_radio_fifth_center"
-                    android:layout_marginTop="10dp"
-                    android:onClick="onRadioButtonFifthClicked" />
-
-            </RadioGroup>
-
-            <!--回答六段目-->
-            <TextView
+            <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/text_title07"
-                android:id="@+id/id_sixth_title"
-                android:layout_below="@+id/id_RadioGroup_fifth"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginTop="30dp"
-                />
+                android:text="@string/text_normal"
+                android:id="@+id/id_radio_third_center"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:onClick="onRadioButtonThirdClicked" />
 
-            <RadioGroup android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_below="@+id/id_sixth_title"
-                android:id="@+id/id_RadioGroup_sixth">
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/text_dev"
-                    android:id="@+id/id_radio_sixth_left"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginRight="50dp"
-                    android:onClick="onRadioButtonSixthClicked" />
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/text_not_dev"
-                    android:id="@+id/id_radio_sixth_right"
-                    android:layout_marginTop="10dp"
-                    android:onClick="onRadioButtonSixthClicked" />
-
-            </RadioGroup>
-
-            <Button
+            <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/text_second_day_done"
-                android:id="@+id/id_btn_firstDay_done"
-                android:layout_below="@+id/id_RadioGroup_sixth"
-                android:layout_marginTop="20dp"
-                android:layout_centerHorizontal="true"
-                android:onClick="onBtnSecondDayDone" />
+                android:text="@string/text_bad"
+                android:id="@+id/id_radio_third_right"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:onClick="onRadioButtonThirdClicked" />
 
-        </LinearLayout>
+        </RadioGroup>
 
-    </ScrollView>
+        <!--回答四段目-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_title04"
+            android:id="@+id/id_forth_title"
+            android:layout_marginTop="30dp"
+            />
 
-</RelativeLayout>
+        <RadioGroup android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/id_RadioGroup_forth"
+            android:weightSum="3">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_enough"
+                android:id="@+id/id_radio_forth_left"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:onClick="onRadioButtonForthClicked" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_exactly"
+                android:id="@+id/id_radio_forth_center"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:onClick="onRadioButtonForthClicked" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_not_enough"
+                android:id="@+id/id_radio_forth_right"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:onClick="onRadioButtonForthClicked" />
+
+        </RadioGroup>
+
+        <!--回答五段目-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_title06"
+            android:id="@+id/id_fifth_title"
+            android:layout_marginTop="30dp"
+            />
+
+        <RadioGroup android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/id_RadioGroup_fifth"
+            android:weightSum="2">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_satisfied"
+                android:id="@+id/id_radio_fifth_left"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:onClick="onRadioButtonFifthClicked" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_not_satisfied"
+                android:id="@+id/id_radio_fifth_center"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:onClick="onRadioButtonFifthClicked" />
+
+        </RadioGroup>
+
+        <!--回答六段目-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_title07"
+            android:id="@+id/id_sixth_title"
+            android:layout_marginTop="30dp"
+            />
+
+        <RadioGroup android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/id_RadioGroup_sixth"
+            android:weightSum="2">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_dev"
+                android:id="@+id/id_radio_sixth_left"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:onClick="onRadioButtonSixthClicked" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_not_dev"
+                android:id="@+id/id_radio_sixth_right"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:onClick="onRadioButtonSixthClicked" />
+
+        </RadioGroup>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_second_day_done"
+            android:id="@+id/id_btn_firstDay_done"
+            android:layout_marginTop="20dp"
+            android:onClick="onBtnSecondDayDone" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -50,7 +50,4 @@ public class MainActivity extends ActionBarActivity {
     private void showToast () {
         Toast.makeText(this, R.string.text_question_done, Toast.LENGTH_SHORT).show();
     }
-
-    public void onRadioButtonFirstClicked(View view) {
-    }
 }
