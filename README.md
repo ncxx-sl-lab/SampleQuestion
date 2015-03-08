@@ -5,7 +5,7 @@
 1人1アプリ開発のサンプルアプリです。  
 
 ## GIFアニメーション
-<img src="http://keepingblog.net/github_images/sample_question/sample_question.gif" width="350" height="600">
+<img src="http://keepingblog.net/github_images/sample_question/sampleQuestion.gif" width="350" height="600">
 
 * **画面右の Download ZIP でソースの圧縮ファイルをダウンロードできます。**  
 ソースの**改行コードはLF**です。  
